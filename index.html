@@ -152,7 +152,7 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                5
+                4
                 <span>文章</span>
             </div>
             <div class="article-info-block">
@@ -247,30 +247,15 @@
         
         <div class="article-entry" itemprop="articleBody">
         
-            
-            <h2 id="Spring是什么？"><a href="#Spring是什么？" class="headerlink" title="Spring是什么？"></a>Spring是什么？</h2><p>Spring是一个轻量级的一站式容器框架，它具有IOC，AOP两大核心特点</p>
+            <p></p><h2 id="Spring是什么？"><a href="#Spring是什么？" class="headerlink" title="Spring是什么？"></a>Spring是什么？</h2><p>Spring是一个轻量级的一站式容器框架，它具有IOC，AOP两大核心特点</p>
 <blockquote>
 <p><strong>轻量级</strong><br>非侵入性，在开发过程中不依赖Spring的API。</p>
-<p><strong>一站式</strong><br>Spring可以整合各种企业级应用框架（如mybatis，hibernate等）</p>
-<p><strong>容器</strong><br>Spring包含并管理对象的生命周期</p>
-<p><strong>IOC（DI）</strong><br>即控制反转（依赖注入）<br>通俗的说就是程序中对象的创建和销毁不再由程序本身的编码实现，而是由外部的Spring容器在程序运行时根据需要注入到程序中，也就是说对象的生命周期不再由程序本身决定，而是由容器来控制。这种控制权转移带来的好处就是降低对象之间的依赖关系，即解耦。</p>
-<p><strong>AOP</strong>：<br>面向切面编程。</p>
-</blockquote>
-<h2 id="Spring怎么用？"><a href="#Spring怎么用？" class="headerlink" title="Spring怎么用？"></a>Spring怎么用？</h2><p><strong>Bean的配置方式</strong><br>Spring容器通过全类名反射的方式创建对象的实例，所以class必须要有无参构造器</p>
-<p><strong>配置形式</strong><br>基于xml文件的方式<br>基于注解的方式</p>
-<p><strong>IOC容器实现</strong><br>Spring 提供了两种类型的 IOC 容器实现.<br>BeanFactory: IOC 容器的基本实现.<br>ApplicationContext: 提供了更多的高级特性. 是 BeanFactory 的子接口.<br>BeanFactory 是 Spring 框架的基础设施，面向 Spring 本身；ApplicationContext 面向使用 Spring 框架的开发者，几乎所有的应用场合都直接使用 ApplicationContext 而非底层的 BeanFactory</p>
-<p><strong>依赖注入方式</strong><br><em>属性注入</em>：<br>通过setter方法或者<property>元素注入依赖的对象，属性注入是实际应用中最常用的注入方式<br><em>构造器注入</em>：<br>通过构造方法注入依赖的对象</property></p>
-<p><strong>注入属性值细节</strong><br><em>字面值</em>:<br>基本数据类型及其封装类、String类型都可以采用字面值的注入方式<br><em>引用其他的Bean</em>:<br>通过ref关键字指定对bean的引用<br><em>内部Bean</em>:<br>内部Bean不能使用在其他任何地方<br>Spring支持级联属性的配置</p>
-<p><strong>集合属性</strong></p>
-<p><list><set>  &gt;   <value></value></set></list></p>
-<p><map>     &gt;   <entry></entry></map></p>
-<p><props>   &gt;  <prop> 为property赋值<br>使用util scheme定义集合<br>使用p命名空间</prop></props></p>
-<p><strong>自动装配</strong><br>byType<br>根据类型自动装配<br>byName<br>根据名称自动装配</p>
-<p>③。使用外部属性文件（PropertyPlaceholderConfigurer）<br>④。创建bean后置处理器（对bean初始化前后进行额外的处理）<br>⑤。扫描+自动装配</p>
-<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><p>①。事务的四个基本要素（ACID  @原一隔久）<br>②。事务的传播行为<br>③。事务的并发问题（脏读，不可重复读，幻读）<br>④。事务的隔离级别（不可重复读，串行）</p>
-<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2>
+<p><strong>一站式</strong><br>Spring可以整合各种企业级应用框架（如mybatis，hibernate等）<br></p>
+            <p class="article-more-link">
+                <a href="/2019/02/01/spring/#more">查看更多</a>
+            </p>
         
-        </div>
+        </blockquote></div>
         <footer class="article-footer">
             <div class="share-container">
 
@@ -278,7 +263,7 @@
 
 </div>
 
-    <a data-url="https://qiumanman.com/2019/02/01/spring/" data-id="cjrn508gk00032s5qeayvtw86" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="https://qiumanman.com/2019/02/01/spring/" data-id="cjrna6fsm0003og5qy3t1aun9" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -356,127 +341,6 @@
 
 
 
-    <article id="post-spring框架" class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/01/30/spring框架/">spring框架</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/01/30/spring框架/">
-            <time datetime="2019-01-30T07:54:18.000Z" itemprop="datePublished">2019-01-30</time>
-        </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="https://qiumanman.com/2019/01/30/spring框架/" data-id="cjrn508gl00042s5qga3ffkv3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="https://qiumanman.com/2019/01/30/spring框架/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://qiumanman.com/2019/01/30/spring框架/">评论</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-jbpm工作流" class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
@@ -521,7 +385,7 @@
 
 </div>
 
-    <a data-url="https://qiumanman.com/2019/01/30/jbpm工作流/" data-id="cjrn508g800002s5q5znwk158" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="https://qiumanman.com/2019/01/30/jbpm工作流/" data-id="cjrna6fsd0001og5qy7prijst" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -673,7 +537,7 @@
 
 </div>
 
-    <a data-url="https://qiumanman.com/2019/01/30/markdown/" data-id="cjrn508gi00022s5qqwbejdah" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="https://qiumanman.com/2019/01/30/markdown/" data-id="cjrna6fsi0002og5qxpspgs8x" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -803,7 +667,7 @@
 
 </div>
 
-    <a data-url="https://qiumanman.com/2019/01/25/hello-world/" data-id="cjrn508gf00012s5qyvtgk8gc" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="https://qiumanman.com/2019/01/25/hello-world/" data-id="cjrna6fs30000og5qq95adthq" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -896,7 +760,7 @@
                             <a href="/2019/02/01/spring/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(/css/images/avatar.png)" alt="Spring框架介绍" class="thumbnail-image"></span>
     
 </a>
 
@@ -906,25 +770,6 @@
                             <p class="item-category"><a class="article-category-link" href="/categories/后端/">后端</a></p>
                             <p class="item-title"><a href="/2019/02/01/spring/" class="title">Spring框架介绍</a></p>
                             <p class="item-date"><time datetime="2019-02-01T04:30:20.000Z" itemprop="datePublished">2019-02-01</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2019/01/30/spring框架/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2019/01/30/spring框架/" class="title">spring框架</a></p>
-                            <p class="item-date"><time datetime="2019-01-30T07:54:18.000Z" itemprop="datePublished">2019-01-30</time></p>
                         </div>
                     </li>
                 
@@ -1003,7 +848,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">4</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -1049,8 +894,8 @@
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2019 qiumanman<br>
-            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+            &copy; 2019 <a href="http://github.com/qiusheng319">qiumanman</a>
+			All Rights Reserved. 总访客  人 
         </div>
     </div>
 </footer>
