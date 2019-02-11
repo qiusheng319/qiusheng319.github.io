@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
@@ -9,7 +9,7 @@
 <meta property="og:title" content="蛮蛮">
 <meta property="og:url" content="https://qiumanman.com/index.html">
 <meta property="og:site_name" content="蛮蛮">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="蛮蛮">
     
@@ -75,14 +75,14 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么...">
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -94,11 +94,11 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',
@@ -128,7 +128,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
     </div>
 
                 </td>
@@ -148,16 +148,16 @@
             <h2 id="name">Qius</h2>
             <h3 id="title">Java Developer &amp; Designer</h3>
             <span id="location"><i class="fa fa-map-marker"></i>ShangHai, China</span>
-            <a id="follow" target="_blank" href=".">FOLLOW</a>
+            <a id="follow" target="_blank" href=".">关注我</a>
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                2
-                <span>posts</span>
+                3
+                <span>文章</span>
             </div>
             <div class="article-info-block">
                 2
-                <span>tags</span>
+                <span>标签</span>
             </div>
         </div>
         
@@ -205,6 +205,140 @@
 
             
             <section id="main">
+    <article id="post-dubbo简单介绍" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/02/11/dubbo简单介绍/">dubbo简单介绍</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/02/11/dubbo简单介绍/">
+            <time datetime="2019-02-11T07:44:21.000Z" itemprop="datePublished">2019-02-11</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/后端/">后端</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Java/">Java</a>, <a class="tag-link" href="/tags/基础/">基础</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><h2 id="dubbo核心概念"><a href="#dubbo核心概念" class="headerlink" title="dubbo核心概念"></a>dubbo核心概念</h2><p>dubbo是一款高性能，轻量级的开源javaRPC框架。它提供三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册与发现。</p>
+<h3 id="dubbo架构图"><a href="#dubbo架构图" class="headerlink" title="dubbo架构图"></a>dubbo架构图</h3><p></p>
+            <p class="article-more-link">
+                <a href="/2019/02/11/dubbo简单介绍/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="https://qiumanman.com/2019/02/11/dubbo简单介绍/" data-id="cjs059dbg0000r85q6tnmwy5x" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="https://qiumanman.com/2019/02/11/dubbo简单介绍/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://qiumanman.com/2019/02/11/dubbo简单介绍/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-spring" class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
@@ -252,7 +386,7 @@
 <p><strong>轻量级</strong><br>非侵入性，在开发过程中不依赖Spring的API。</p>
 <p><strong>一站式</strong><br>Spring可以整合各种企业级应用框架（如mybatis，hibernate等）<br></p>
             <p class="article-more-link">
-                <a href="/2019/02/01/spring/#more">Read More</a>
+                <a href="/2019/02/01/spring/#more">查看更多</a>
             </p>
         
         </blockquote></div>
@@ -263,7 +397,7 @@
 
 </div>
 
-    <a data-url="https://qiumanman.com/2019/02/01/spring/" data-id="cjrokoy8c0000to5qi9tjf50p" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://qiumanman.com/2019/02/01/spring/" data-id="cjs059dbp0001r85qwzmw09e1" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -331,7 +465,7 @@
 
             
     
-        <a href="https://qiumanman.com/2019/02/01/spring/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://qiumanman.com/2019/02/01/spring/">Comments</a>
+        <a href="https://qiumanman.com/2019/02/01/spring/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://qiumanman.com/2019/02/01/spring/">评论</a>
     
 
         </footer>
@@ -377,7 +511,7 @@
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a><br></p>
             <p class="article-more-link">
-                <a href="/2019/01/25/hello-world/#more">Read More</a>
+                <a href="/2019/01/25/hello-world/#more">查看更多</a>
             </p>
         
         </div>
@@ -388,7 +522,7 @@
 
 </div>
 
-    <a data-url="https://qiumanman.com/2019/01/25/hello-world/" data-id="cjrokoy8l0001to5q1ceel3d8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://qiumanman.com/2019/01/25/hello-world/" data-id="cjs059dbw0004r85q7oavwbt7" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -456,7 +590,7 @@
 
             
     
-        <a href="https://qiumanman.com/2019/01/25/hello-world/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://qiumanman.com/2019/01/25/hello-world/">Comments</a>
+        <a href="https://qiumanman.com/2019/01/25/hello-world/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://qiumanman.com/2019/01/25/hello-world/">评论</a>
     
 
         </footer>
@@ -471,9 +605,28 @@
    
         
     <div class="widget-wrap">
-        <h3 class="widget-title">recent</h3>
+        <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/02/11/dubbo简单介绍/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/css/images/dubbo_architecture.png)" alt="dubbo简单介绍" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/后端/">后端</a></p>
+                            <p class="item-title"><a href="/2019/02/11/dubbo简单介绍/" class="title">dubbo简单介绍</a></p>
+                            <p class="item-date"><time datetime="2019-02-11T07:44:21.000Z" itemprop="datePublished">2019-02-11</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -520,34 +673,34 @@
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">categories</h3>
+        <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/后端/">后端</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/后端/">后端</a><span class="category-list-count">2</span></li></ul>
         </div>
     </div>
 
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">archives</h3>
+        <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">tags</h3>
+        <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/基础/">基础</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/基础/">基础</a><span class="tag-list-count">2</span></li></ul>
         </div>
     </div>
 
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">tag cloud</h3>
+        <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
             <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/基础/" style="font-size: 10px;">基础</a>
         </div>
@@ -556,7 +709,7 @@
     
         
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
+        <h3 class="widget-title">链接</h3>
         <div class="widget">
             <ul>
                 

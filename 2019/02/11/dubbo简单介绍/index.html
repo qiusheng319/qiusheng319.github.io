@@ -3,15 +3,22 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
-    <title>标签: Java | 蛮蛮</title>
+    <title>dubbo简单介绍 | 蛮蛮</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="蛮蛮">
-<meta property="og:url" content="https://qiumanman.com/tags/Java/index.html">
+    <meta name="description" content="dubbo核心概念dubbo是一款高性能，轻量级的开源javaRPC框架。它提供三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册与发现。 dubbo架构图">
+<meta name="keywords" content="Java,基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="dubbo简单介绍">
+<meta property="og:url" content="https://qiumanman.com/2019/02/11/dubbo简单介绍/index.html">
 <meta property="og:site_name" content="蛮蛮">
+<meta property="og:description" content="dubbo核心概念dubbo是一款高性能，轻量级的开源javaRPC框架。它提供三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册与发现。 dubbo架构图">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://qiumanman.com/css/images/dubbo_architecture.png">
+<meta property="og:updated_time" content="2019-02-11T09:31:59.555Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="蛮蛮">
+<meta name="twitter:title" content="dubbo简单介绍">
+<meta name="twitter:description" content="dubbo核心概念dubbo是一款高性能，轻量级的开源javaRPC框架。它提供三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册与发现。 dubbo架构图">
+<meta name="twitter:image" content="https://qiumanman.com/css/images/dubbo_architecture.png">
     
 
     
@@ -204,25 +211,21 @@
 </aside>
 
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#Java</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-dubbo简单介绍" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2019/02/11/dubbo简单介绍/">dubbo简单介绍</a>
+        <h1 class="article-title" itemprop="name">
+            dubbo简单介绍
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2019/02/11/dubbo简单介绍/">
@@ -231,59 +234,181 @@
     </div>
 
 
-                    
+                        
     <div class="article-category">
     	<i class="fa fa-folder"></i>
         <a class="article-category-link" href="/categories/后端/">后端</a>
     </div>
 
-                    
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/Java/">Java</a>, <a class="tag-link" href="/tags/基础/">基础</a>
     </div>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+                    </div>
                 
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2019/02/01/spring/">了解Spring看这一篇就够了</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/02/01/spring/">
-            <time datetime="2019-02-01T04:30:20.000Z" itemprop="datePublished">2019-02-01</time>
-        </a>
-    </div>
-
-
-                    
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/后端/">后端</a>
-    </div>
-
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Java/">Java</a>, <a class="tag-link" href="/tags/基础/">基础</a>
-    </div>
-
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">文章目录</strong>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#dubbo核心概念"><span class="toc-number">1.</span> <span class="toc-text">dubbo核心概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#dubbo架构图"><span class="toc-number">1.1.</span> <span class="toc-text">dubbo架构图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dubbo配置"><span class="toc-number">2.</span> <span class="toc-text">dubbo配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#集群容错"><span class="toc-number">2.1.</span> <span class="toc-text">集群容错</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#负载均衡"><span class="toc-number">2.2.</span> <span class="toc-text">负载均衡</span></a></li></ol></li></ol>
                 </div>
-            </div>
+            
+            <h2 id="dubbo核心概念"><a href="#dubbo核心概念" class="headerlink" title="dubbo核心概念"></a>dubbo核心概念</h2><p>dubbo是一款高性能，轻量级的开源javaRPC框架。它提供三大核心能力：面向接口的远程方法调用，智能容错和负载均衡，以及服务自动注册与发现。</p>
+<h3 id="dubbo架构图"><a href="#dubbo架构图" class="headerlink" title="dubbo架构图"></a>dubbo架构图</h3><a id="more"></a>
+<p><img src="/css/images/dubbo_architecture.png" alt=""><br><strong>服务提供者（Provider）</strong>：暴露服务的服务提供方，服务提供者在启动时，向注册中心注册自己提供的服务。<br><strong>服务消费者（Consumer）</strong>: 调用远程服务的服务消费方，服务消费者在启动时，向注册中心订阅自己所需的服务，服务消费者，从提供者地址列表中，基于软负载均衡算法，选一台提供者进行调用，如果调用失败，再选另一台调用。<br><strong>注册中心（Registry）</strong>：注册中心返回服务提供者地址列表给消费者，如果有变更，注册中心将基于长连接推送变更数据给消费者<br><strong>监控中心（Monitor）</strong>：服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心</p>
+<h2 id="dubbo配置"><a href="#dubbo配置" class="headerlink" title="dubbo配置"></a>dubbo配置</h2><p><strong>不同粒度配置的覆盖关系</strong></p>
+<p>以 timeout 为例，其它 retries, loadbalance, actives 等类似：</p>
+<blockquote>
+<p>方法级优先，接口级次之，全局配置再次之。<br>如果级别一样，则消费方优先，提供方次之。</p>
+</blockquote>
+<p>建议由服务提供方设置超时，因为一个方法需要执行多长时间，服务提供方更清楚，如果一个消费方同时引用多个服务，就不需要关心每个服务的超时设置</p>
+<h3 id="集群容错"><a href="#集群容错" class="headerlink" title="集群容错"></a>集群容错</h3><p>在集群调用失败时，Dubbo 提供了多种容错方案，缺省为 failover 重试。</p>
+<p><strong>Failover Cluster</strong></p>
+<blockquote>
+<p>失败自动切换，当出现失败，重试其它服务器 [1]。通常用于读操作，但重试会带来更长延迟。可通过 retries=”2” 来设置重试次数(不含第一次)。</p>
+</blockquote>
+<p><strong>Failfast Cluster</strong></p>
+<blockquote>
+<p>快速失败，只发起一次调用，失败立即报错。通常用于非幂等性的写操作，比如新增记录。</p>
+</blockquote>
+<p><strong>Failsafe Cluster</strong></p>
+<blockquote>
+<p>失败安全，出现异常时，直接忽略。通常用于写入审计日志等操作。</p>
+</blockquote>
+<h3 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h3><p>在集群负载均衡时，Dubbo 提供了多种均衡策略，缺省为 random 随机调用。</p>
+<p><strong>Random LoadBalance</strong></p>
+<blockquote>
+<p><strong>随机</strong>，按权重设置随机概率。<br>在一个截面上碰撞的概率高，但调用量越大分布越均匀，而且按概率使用权重后也比较均匀，有利于动态调整提供者权重。</p>
+</blockquote>
+<p><strong>RoundRobin LoadBalance</strong></p>
+<blockquote>
+<p><strong>轮询</strong>，按公约后的权重设置轮询比率。<br>存在慢的提供者累积请求的问题，比如：第二台机器很慢，但没挂，当请求调到第二台时就卡在那，久而久之，所有请求都卡在调到第二台上。</p>
+</blockquote>
+<p><strong>LeastActive LoadBalance</strong></p>
+<blockquote>
+<p><strong>最少活跃调用数</strong>，相同活跃数的随机，活跃数指调用前后计数差。<br>使慢的提供者收到更少请求，因为越慢的提供者的调用前后计数差会越大。</p>
+</blockquote>
+<p><strong>ConsistentHash LoadBalance</strong></p>
+<blockquote>
+<p><strong>一致性 Hash</strong>，相同参数的请求总是发到同一提供者。</p>
+</blockquote>
+
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
 </div>
+
+    <a data-url="https://qiumanman.com/2019/02/11/dubbo简单介绍/" data-id="cjs059dbg0000r85q6tnmwy5x" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="https://qiumanman.com/2019/02/11/dubbo简单介绍/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://qiumanman.com/2019/02/11/dubbo简单介绍/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/02/01/spring/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">了解Spring看这一篇就够了</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
 </section>
             
                 <aside id="sidebar">
@@ -425,11 +550,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'https://qiumanman.com/2019/02/11/dubbo简单介绍/';
+        
+        this.page.identifier = 'dubbo简单介绍';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/count.js';
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
